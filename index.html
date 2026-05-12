@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="projektstyle.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI World — The Intelligence Revolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle" />
+    <nav class="nav">
+        <div class="nav-logo">AI World</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About AI</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#types">Types of AI</a></li>
+            <li><a href="#timeline">History</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#ethics">Benefits &amp; Risks</a></li>
+            <li><a href="#future">Future</a></li>
+        </ul>
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-eye">Intelligence Revolution — 2026</div>
+            <h1 class="hero-h">THE<br>FUTURE<br>IS <span>NOW.</span></h1>
+            <p class="hero-sub">Artificial intelligence is rewriting every industry, every discipline, and every corner
+                of human experience. From language models that write code to robots that perform surgery, AI has moved
+                from research lab to daily life in under a decade.</p>
+            <p class="hero-sub2">We are living through the most consequential technological transition in human history.
+                This guide explains what AI is, how it works, what it can and cannot do, and where it is taking us —
+                with clarity, depth, and honest uncertainty about what lies ahead.</p>
+            <div class="ctas">
+                <a href="#about" class="btn btn-p">Explore AI →</a>
+                <a href="#timeline" class="btn btn-o">View Timeline</a>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="s-label">What Is AI</div>
+            <h2 class="s-title reveal">Understanding Artificial Intelligence</h2>
+            <div class="about-grid">
+                <p class="about-lead reveal">Artificial Intelligence is the science of building machines that can
+                    perceive, reason, learn, and act — tasks that once demanded exclusively human cognition. It is not a
+                    single invention but a vast ecosystem of techniques, architectures, and research programmes that
+                    have been evolving for over 70 years.</p>
+                <div class="about-body reveal">
+                    <p>AI systems are trained on vast datasets using advanced algorithms: neural networks, transformers,
+                        and reinforcement learning agents that iteratively improve through feedback. The quality and
+                        diversity of training data is as important as the architecture — garbage in, garbage out, at
+                        enormous scale.</p>
+                    <p>The spectrum runs from narrow AI — systems that master one task such as image recognition or
+                        language translation — to the long-horizon goal of artificial general intelligence (AGI),
+                        capable of any cognitive work a human can perform.</p>
+                    <p>Today AI is embedded everywhere: the search results you browse, the shows you're recommended, the
+                        medical scans your doctor reads, the cars beginning to drive themselves. It is the defining
+                        technology of the 21st century, and understanding it is no longer optional for any educated
+                        person.</p>
+                    <p>AI is not a single technology but a rich ecosystem of techniques: supervised learning,
+                        unsupervised learning, self-supervised learning, and reinforcement learning each solve different
+                        problems. The current wave is dominated by deep learning — layered neural networks trained on
+                        internet-scale data using massive GPU clusters. This has delivered capabilities that surprised
+                        even their creators and forced a wholesale revision of timelines for what machines can achieve.
+                    </p>
+                    <p>The economic implications are enormous. Productivity gains from AI-assisted work are already
+                        measurable across knowledge industries. The distribution of those gains — who benefits, who is
+                        displaced, and on what timeline — is one of the central political and economic questions of the
+                        next decade. Understanding the technology is the first step toward shaping those outcomes
+                        intentionally rather than passively.</p>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat reveal">
+                    <div class="stat-n">$1.8T</div>
+                    <div class="stat-l">Global AI market value by 2030</div>
+                </div>
+                <div class="stat reveal" style="padding-left:1.5rem;">
+                    <div class="stat-n">97M</div>
+                    <div class="stat-l">New AI-related jobs by 2025</div>
+                </div>
+                <div class="stat reveal" style="padding-left:1.5rem;">
+                    <div class="stat-n">700%</div>
+                    <div class="stat-l">Increase in AI patent filings since 2015</div>
+                </div>
+            </div>
+            <div class="stat-row" style="margin-top:0; border-top:1px solid var(--rule);">
+                <div class="stat reveal">
+                    <div class="stat-n">4x</div>
+                    <div class="stat-l">AI compute doubles every ~6 months</div>
+                </div>
+                <div class="stat reveal" style="padding-left:1.5rem;">
+                    <div class="stat-n">85%</div>
+                    <div class="stat-l">Of enterprises piloting AI in 2025</div>
+                </div>
+                <div class="stat reveal" style="padding-left:1.5rem;">
+                    <div class="stat-n">200B+</div>
+                    <div class="stat-l">Parameters in frontier language models</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section how" id="how">
+        <div class="container">
+            <div class="s-label">Mechanics</div>
+            <h2 class="s-title reveal">How AI Systems Actually Work</h2>
+            <div class="how-grid">
+                <div class="how-step reveal">
+                    <div class="how-num">01</div>
+                    <h3>Data Collection</h3>
+                    <p>Every AI system starts with data. Modern models are trained on trillions of tokens — text from
+                        books, websites, code, scientific papers, and conversations. Image models train on billions of
+                        captioned photographs. The quality and breadth of training data directly determines what the
+                        model can and cannot do.</p>
+                    <p>Data curation is a competitive advantage. Labs invest heavily in filtering low-quality or harmful
+                        content, deduplicating near-identical documents, and sourcing high-value material like
+                        scientific literature and curated code repositories. A model trained on cleaner data
+                        consistently outperforms one trained on raw web crawls of equal size.</p>
+                </div>
+                <div class="how-step reveal">
+                    <div class="how-num">02</div>
+                    <h3>Architecture Design</h3>
+                    <p>A neural network architecture defines how information flows through layers of artificial neurons.
+                        Different architectures — CNNs for images, transformers for language, graph networks for
+                        molecular data — encode inductive biases that make learning certain patterns easier.
+                        Architecture is as important as data.</p>
+                    <p>The transformer, introduced in 2017, has become the dominant architecture for almost every
+                        frontier AI system. Its self-attention mechanism allows every element in a sequence to directly
+                        interact with every other element, enabling long-range dependencies that earlier architectures
+                        struggled to capture. Variants like sparse attention and mixture-of-experts extend transformers
+                        to larger scales at lower cost.</p>
+                </div>
+                <div class="how-step reveal">
+                    <div class="how-num">03</div>
+                    <h3>Training &amp; Optimization</h3>
+                    <p>The model makes predictions, compares them to ground truth, calculates a loss signal, and adjusts
+                        its billions of numerical parameters via gradient descent. This cycle repeats billions of times
+                        across GPU clusters for weeks or months. Modern frontier models consume megawatts of electricity
+                        during training.</p>
+                    <p>Distributed training across thousands of GPUs requires careful engineering: gradient
+                        synchronization, mixed-precision arithmetic, and checkpoint management. The computational cost
+                        of training frontier models now runs into tens of millions of dollars per run, creating
+                        significant barriers to entry and concentrating capability at a handful of well-funded
+                        organizations.</p>
+                </div>
+                <div class="how-step reveal">
+                    <div class="how-num">04</div>
+                    <h3>Evaluation &amp; Testing</h3>
+                    <p>After pre-training, models are evaluated on held-out benchmarks measuring accuracy, reasoning,
+                        safety, and robustness. Automated metrics catch obvious failures; red teams probe for harmful
+                        behaviors. No evaluation suite captures everything — real-world deployment reveals edge cases
+                        that labs never anticipated.</p>
+                    <p>Benchmark saturation is a recurring challenge: as models improve, benchmarks become too easy and
+                        lose discriminative power. The field continuously invents harder tests — adversarial datasets,
+                        contamination-controlled evaluations, and human-comparison studies — to track genuine capability
+                        progress rather than overfitting to known test sets.</p>
+                </div>
+                <div class="how-step reveal">
+                    <div class="how-num">05</div>
+                    <h3>Fine-tuning &amp; Alignment</h3>
+                    <p>Pre-trained models are then fine-tuned on curated datasets and shaped by human feedback (RLHF).
+                        This stage steers raw capability toward helpfulness and safety. Instruction-tuned models respond
+                        to conversational prompts; specialized models are fine-tuned on medical records, legal
+                        documents, or programming languages.</p>
+                    <p>Constitutional AI and direct preference optimization are newer techniques that reduce the cost of
+                        alignment while improving stability. The goal is a model that is not just capable but reliably
+                        helpful, honest, and resistant to misuse — a hard target to hit precisely because helpfulness
+                        and safety can pull in opposite directions at the margins.</p>
+                </div>
+                <div class="how-step reveal">
+                    <div class="how-num">06</div>
+                    <h3>Deployment &amp; Inference</h3>
+                    <p>Trained models are compressed, quantized, and served on inference hardware — GPUs, TPUs, or
+                        specialized chips. Latency and cost are real engineering constraints. Many models are distilled
+                        into smaller versions that preserve most capability at a fraction of the compute. Edge
+                        deployment brings AI directly to mobile devices.</p>
+                    <p>Inference optimization is now a major research and engineering discipline in its own right.
+                        Techniques like speculative decoding, KV-cache management, continuous batching, and flash
+                        attention have reduced the cost of serving frontier models by orders of magnitude since 2022,
+                        making large-scale AI products economically viable for the first time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section types" id="types">
+        <div class="container">
+            <div class="s-label" style="color:rgba(255,255,255,.4);">Taxonomy</div>
+            <h2 class="s-title" style="color:var(--bg);">Types of Artificial Intelligence</h2>
+            <div class="types-grid">
+                <div class="type-card reveal">
+                    <div class="type-tag">Level 1</div>
+                    <h3>Narrow AI (ANI)</h3>
+                    <p>Artificial Narrow Intelligence is the AI that exists today. It excels at one specific task —
+                        playing chess, translating text, recognizing faces, recommending products — but cannot transfer
+                        that skill to unrelated domains.</p>
+                    <p>Every commercial AI product from facial recognition to recommendation engines is narrow AI. It
+                        can surpass human performance on its target task while failing trivially at anything outside its
+                        training distribution. Understanding this limitation is essential to deploying AI responsibly in
+                        high-stakes settings.</p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-tag">Level 2</div>
+                    <h3>General AI (AGI)</h3>
+                    <p>Artificial General Intelligence refers to a hypothetical system that can perform any intellectual
+                        task a human can. It would understand new domains from minimal examples, form plans across long
+                        time horizons, and reason about its own cognition.</p>
+                    <p>AGI does not yet exist. Leading researchers disagree sharply on the timeline — estimates range
+                        from under 5 years to never. Large language models hint at general capabilities while exposing
+                        consistent failure modes in reasoning, arithmetic, and world-modelling. The definition itself is
+                        contested: whether current frontier models already meet some formulations of AGI is a live
+                        debate.</p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-tag">Level 3</div>
+                    <h3>Superintelligence (ASI)</h3>
+                    <p>Artificial Superintelligence describes a system that surpasses the collective cognitive ability
+                        of all humans across every domain — science, creativity, social understanding, strategy. It is a
+                        theoretical concept, not a product on any roadmap.</p>
+                    <p>The study of ASI is largely the domain of AI safety research. If such a system were ever built,
+                        the challenge of ensuring it acts in accordance with human values would be existential in scope.
+                        Questions of goal stability, corrigibility, and power-seeking behavior — which are tractable
+                        research problems today — become civilization-scale risks at superintelligent capability levels.
+                    </p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-tag">Paradigm</div>
+                    <h3>Symbolic AI</h3>
+                    <p>The original AI paradigm: hand-coded rules, logical inference, and explicit knowledge bases.
+                        Expert systems of the 1970s–80s encoded human expertise as IF-THEN rules. They were transparent
+                        and explainable but brittle — unable to handle input outside their rule sets.</p>
+                    <p>Symbolic AI is experiencing a revival in hybrid systems that combine neural network perception
+                        with logical reasoning. Neurosymbolic AI captures the strengths of both approaches: the
+                        perceptual fluency of deep learning and the auditability and systematic generalization of
+                        symbolic methods. This convergence is particularly valuable in domains like healthcare and law
+                        where decisions must be explainable.</p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-tag">Paradigm</div>
+                    <h3>Connectionist AI</h3>
+                    <p>Connectionism — the neural network paradigm — learns representations directly from data through
+                        layers of weighted connections. It handles noise, ambiguity, and high-dimensional inputs
+                        gracefully, making it ideal for perception tasks like vision and speech.</p>
+                    <p>The deep learning revolution of 2012 was a vindication of connectionism after decades of
+                        skepticism. Today's transformer models with hundreds of billions of parameters represent this
+                        paradigm at its most developed form. The key open question is whether scale alone will yield the
+                        systematic reasoning and knowledge transfer that characterize human intelligence, or whether
+                        fundamentally new ideas are required.</p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-tag">Paradigm</div>
+                    <h3>Generative AI</h3>
+                    <p>Generative models learn the distribution of training data and can sample new examples from it.
+                        Diffusion models generate photorealistic images. Large language models generate coherent text.
+                        Audio models generate speech, music, and environmental sounds indistinguishable from recordings.
+                    </p>
+                    <p>The 2022–2026 generative AI wave has been the most commercially impactful in AI history, spawning
+                        entirely new industries while raising urgent questions about authorship, authenticity, and the
+                        nature of creativity itself. The economic value created is already in the hundreds of billions;
+                        the cultural disruption has only just begun. Every creative and knowledge industry is adapting
+                        to a world where high-quality content generation costs near zero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section tl-section" id="timeline">
+        <div class="container">
+            <div class="s-label">A Brief History</div>
+            <h2 class="s-title reveal">Milestones That Shaped AI</h2>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-year">1943</div>
+                    <div class="tl-body">
+                        <h3>McCulloch &amp; Pitts — The First Neuron Model</h3>
+                        <p>Warren McCulloch and Walter Pitts publish a mathematical model of a neuron, establishing the
+                            theoretical foundation for artificial neural networks a decade before computers were
+                            powerful enough to run them. Their insight — that logical computation could emerge from
+                            networks of simple threshold units — remains foundational to all neural network theory.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">1950</div>
+                    <div class="tl-body">
+                        <h3>Alan Turing — The Imitation Game</h3>
+                        <p>Turing proposes the "Turing Test" in his landmark paper "Computing Machinery and
+                            Intelligence," framing the foundational question: can a machine think? The paper also
+                            anticipates machine learning, genetic algorithms, and reinforcement learning — remarkable
+                            foresight from someone working on room-sized vacuum-tube computers.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">1956</div>
+                    <div class="tl-body">
+                        <h3>The Dartmouth Workshop</h3>
+                        <p>John McCarthy coins the term "Artificial Intelligence." A summer conference births an entire
+                            scientific field. McCarthy, Minsky, Shannon, and Simon all attend. The optimism is boundless
+                            and premature — they expected human-level AI within a generation. The first of many
+                            underestimates of the problem's depth.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">1969</div>
+                    <div class="tl-body">
+                        <h3>Minsky &amp; Papert — Perceptrons</h3>
+                        <p>The book <em>Perceptrons</em> exposes the limitations of single-layer neural networks,
+                            triggering the first "AI Winter." Funding and interest collapse. Symbolic AI dominates the
+                            next decade through expert systems like MYCIN and DENDRAL, which prove valuable in narrow
+                            domains but impossible to scale or maintain as knowledge bases grow.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">1986</div>
+                    <div class="tl-body">
+                        <h3>Backpropagation Popularized</h3>
+                        <p>Rumelhart, Hinton, and Williams popularize the backpropagation algorithm, making it practical
+                            to train multi-layer neural networks. The neural network renaissance begins briefly before a
+                            second winter descends as hardware constraints prevent the scaling the technique requires to
+                            shine.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">1997</div>
+                    <div class="tl-body">
+                        <h3>Deep Blue Defeats Kasparov</h3>
+                        <p>IBM's chess engine becomes the first computer to beat a reigning world champion under
+                            standard tournament rules. The match captivates the world and reignites public interest in
+                            AI's potential. Notably, Deep Blue used brute-force search rather than learning — a reminder
+                            that intelligence and capability are not synonymous.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2006</div>
+                    <div class="tl-body">
+                        <h3>Hinton's Deep Belief Networks</h3>
+                        <p>Geoffrey Hinton demonstrates that deep neural networks can be pre-trained layer-by-layer,
+                            solving the vanishing gradient problem. This paper quietly ends the second AI Winter and
+                            sets the stage for the deep learning era. The key ingredient still missing is enough data
+                            and compute — which arrive in the following six years.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2012</div>
+                    <div class="tl-body">
+                        <h3>AlexNet and the Deep Learning Revolution</h3>
+                        <p>A convolutional neural network wins ImageNet by halving the error rate of the best non-neural
+                            entry. GPU-powered deep learning becomes the new paradigm. Every major tech company pivots
+                            within two years. The ImageNet moment is now recognised as the opening of the modern AI era
+                            — the point where the trajectory of the field irrevocably changed.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2016</div>
+                    <div class="tl-body">
+                        <h3>AlphaGo Defeats Lee Sedol</h3>
+                        <p>DeepMind's AlphaGo beats the world Go champion 4-1, a feat experts said was a decade away.
+                            Reinforcement learning and deep neural networks together crack a game with more positions
+                            than atoms in the observable universe. Move 37 in Game 2 — a move no human would have played
+                            — becomes an iconic symbol of machine creativity.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2017</div>
+                    <div class="tl-body">
+                        <h3>"Attention Is All You Need"</h3>
+                        <p>Google researchers publish the transformer architecture — the backbone behind GPT, BERT, and
+                            virtually all modern large language models. The paper is one of the most cited in computer
+                            science history. Within two years, BERT and GPT-2 demonstrate that pre-training transformers
+                            on large corpora yields surprisingly general language capabilities.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2020</div>
+                    <div class="tl-body">
+                        <h3>GPT-3 — 175 Billion Parameters</h3>
+                        <p>OpenAI releases GPT-3, demonstrating that scaling alone — more data, more compute, more
+                            parameters — yields emergent capabilities no one explicitly programmed. Few-shot learning
+                            and in-context learning surprise even the researchers. The model can write poetry, translate
+                            languages, answer questions, and even produce working code from natural language
+                            descriptions — all without task-specific training.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2021</div>
+                    <div class="tl-body">
+                        <h3>AlphaFold 2 Solves Protein Folding</h3>
+                        <p>DeepMind's AlphaFold 2 predicts protein structures with experimental accuracy, solving a
+                            50-year-old grand challenge in biology. The database of 200 million predicted structures is
+                            released freely, transforming drug discovery overnight. It is widely considered the most
+                            significant scientific achievement produced by an AI system to date.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2022</div>
+                    <div class="tl-body">
+                        <h3>ChatGPT Reaches 100 Million Users</h3>
+                        <p>OpenAI's chatbot becomes the fastest-growing consumer application in history, bringing
+                            generative AI into everyday life. Stable Diffusion and DALL-E 2 simultaneously make image
+                            generation accessible to anyone with an internet connection. 2022 marks the year AI ceased
+                            to be a technology niche and became a mass cultural and economic phenomenon.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2024</div>
+                    <div class="tl-body">
+                        <h3>The EU AI Act — First Global Regulation</h3>
+                        <p>The European Union passes the world's first comprehensive AI regulation, classifying AI
+                            applications by risk level and imposing transparency and testing requirements. The Act
+                            establishes a template that regulators worldwide are studying. Simultaneously, Anthropic,
+                            OpenAI, and Google DeepMind all publish voluntary safety frameworks and commit to
+                            third-party audits.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2025</div>
+                    <div class="tl-body">
+                        <h3>Reasoning Models &amp; Agents Emerge</h3>
+                        <p>AI systems begin to autonomously plan, use tools, and complete multi-step tasks. Agentic
+                            frameworks allow models to browse the web, write and execute code, and coordinate with other
+                            AI models. The shift from answering questions to completing tasks marks a qualitative change
+                            in what AI deployment looks like in practice — and what safety challenges it raises.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2026</div>
+                    <div class="tl-body">
+                        <h3>Multimodal AI Becomes Standard</h3>
+                        <p>Leading AI systems now process text, images, audio, and video in a unified architecture.
+                            Real-time voice conversation, live video understanding, and cross-modal reasoning are
+                            commoditized. The gap between frontier and open-source narrows dramatically, with open
+                            models matching closed frontier performance on most benchmarks from just six months prior.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section apps" id="applications">
+        <div class="container">
+            <div class="s-label">Applications</div>
+            <h2 class="s-title reveal">AI in Every Corner of Modern Life</h2>
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-n">01 — Robotics</div>
+                    <h3 class="card-t">Autonomous Robotics</h3>
+                    <p class="card-b">AI-powered robots operate in manufacturing plants, hospital wards, warehouses, and
+                        even deep space. Boston Dynamics' Spot patrols industrial sites; surgical robots assist in
+                        minimally invasive procedures; autonomous drones deliver medicine in remote areas. Physical AI —
+                        robots that perceive and act in the real world — is now the most active frontier of applied
+                        research, with humanoid robots beginning to enter industrial deployment.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">💬</div>
+                    <div class="card-n">02 — Language</div>
+                    <h3 class="card-t">Conversational Assistants</h3>
+                    <p class="card-b">Large language models now draft emails, write code, tutor students, and navigate
+                        complex customer service flows. Modern assistants understand context across long conversations,
+                        switch languages seamlessly, and generate creative content on demand. The productivity gains for
+                        knowledge workers who learn to use these tools effectively are measured in hours per week —
+                        representing a genuine augmentation of individual capability.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">📊</div>
+                    <div class="card-n">03 — Analytics</div>
+                    <h3 class="card-t">Intelligent Data Analytics</h3>
+                    <p class="card-b">Businesses use AI to surface hidden patterns in petabytes of data: predicting
+                        customer churn, detecting financial fraud, optimizing supply chains, and forecasting demand with
+                        precision that traditional statistics cannot match. Natural language interfaces allow
+                        non-technical users to query data warehouses in plain English, democratizing analytics across
+                        organizations that previously required dedicated data science teams.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🏥</div>
+                    <div class="card-n">04 — Healthcare</div>
+                    <h3 class="card-t">Medical Diagnosis &amp; Drug Discovery</h3>
+                    <p class="card-b">Deep learning models read CT scans and MRIs with radiologist-level accuracy.
+                        AlphaFold cracked the protein-folding problem, accelerating drug discovery by decades. AI also
+                        monitors patient vitals in real time and flags deterioration before it becomes critical. The
+                        most promising near-term application is not replacing physicians but extending specialist
+                        expertise to underserved populations who currently lack access to quality diagnostic care.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🚗</div>
+                    <div class="card-n">05 — Transport</div>
+                    <h3 class="card-t">Self-Driving &amp; Smart Mobility</h3>
+                    <p class="card-b">Autonomous vehicles from Waymo and Tesla accumulate billions of miles of sensor
+                        data. Urban traffic systems use AI to dynamically adjust signals, slashing congestion. In
+                        logistics, AI-optimised routing cuts delivery times and carbon emissions simultaneously. The
+                        remaining challenge for full autonomy is the long tail of edge cases — rare but critical
+                        situations that require human-level judgment and contextual understanding.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-n">06 — Creativity</div>
+                    <h3 class="card-t">Generative Arts &amp; Media</h3>
+                    <p class="card-b">Text-to-image models, music generators, and video synthesis tools are reshaping
+                        how creative professionals work. AI co-creates concept art, scores soundtracks, writes
+                        screenplays — expanding what a single person can produce. The most thoughtful practitioners use
+                        AI as a creative collaborator: generating options rapidly, then applying human taste and
+                        judgment to select and refine the most resonant ideas.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🔒</div>
+                    <div class="card-n">07 — Security</div>
+                    <h3 class="card-t">Cybersecurity &amp; Threat Detection</h3>
+                    <p class="card-b">AI analyses network traffic at machine speed, identifying zero-day exploits and
+                        anomalous behavior that rules-based systems miss entirely. It also powers biometric
+                        authentication, real-time fraud prevention, and adversarial attack defence. The same
+                        capabilities enable offensive applications, making AI both the best current attack vector and
+                        the best defence — an arms race that is accelerating rapidly.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🌍</div>
+                    <div class="card-n">08 — Climate</div>
+                    <h3 class="card-t">Climate &amp; Sustainability</h3>
+                    <p class="card-b">AI models predict extreme weather events with days more advance warning. Smart
+                        grids balance renewable energy supply against demand. DeepMind's models optimize data-centre
+                        cooling, cutting energy use by 40%. Precision agriculture reduces water and pesticide waste. In
+                        materials science, AI is accelerating the discovery of novel battery chemistries, solar cell
+                        materials, and carbon capture compounds that could be critical to decarbonization.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🎓</div>
+                    <div class="card-n">09 — Education</div>
+                    <h3 class="card-t">Adaptive Learning Platforms</h3>
+                    <p class="card-b">Personalised AI tutors adjust lesson difficulty in real time, give instant
+                        feedback on essays, and identify knowledge gaps before exams. Students in rural areas with
+                        limited teacher access are gaining world-class instruction through AI-powered platforms. The
+                        promise of truly personalised education — once the province of expensive private tutoring — is
+                        becoming accessible at population scale for the first time in history.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">⚖️</div>
+                    <div class="card-n">10 — Legal</div>
+                    <h3 class="card-t">Legal Research &amp; Contract Analysis</h3>
+                    <p class="card-b">AI systems review thousands of legal documents in minutes, flag contractual risks,
+                        and surface relevant case law. Law firms use AI to cut research time dramatically, while legal
+                        aid platforms are beginning to make expert guidance accessible to those who cannot afford a
+                        lawyer. The technology has the potential to partially close the justice gap — the vast disparity
+                        in legal representation between wealthy and low-income defendants.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🏦</div>
+                    <div class="card-n">11 — Finance</div>
+                    <h3 class="card-t">Algorithmic Trading &amp; Risk</h3>
+                    <p class="card-b">High-frequency trading algorithms react to market microstructure in microseconds.
+                        AI credit models assess borrower risk from thousands of signals, enabling fairer lending
+                        decisions when built correctly. Insurance companies use satellite imagery and AI to assess
+                        property risk and settle claims without a human assessor visiting the site — compressing a
+                        process that once took weeks into minutes.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🌾</div>
+                    <div class="card-n">12 — Agriculture</div>
+                    <h3 class="card-t">Precision Farming</h3>
+                    <p class="card-b">Drone fleets map crop health at centimetre resolution. AI recommends exactly where
+                        to irrigate, fertilise, or intervene for pest control. Yield prediction models help farmers plan
+                        harvests weeks in advance. Soil sensors feed continuous data into optimization loops that cut
+                        waste dramatically. As climate change makes growing conditions more variable and unpredictable,
+                        AI-powered precision agriculture is becoming not a competitive advantage but a survival
+                        necessity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section deep" id="deepdive">
+        <div class="container">
+            <div class="s-label" style="color:rgba(255,255,255,.4);">Deep Dive</div>
+            <h2 class="s-title" style="color:var(--bg);">Everything You Need To Know About AI</h2>
+            <div class="acc">
+                <div class="acc-item">
+                    <input type="checkbox" id="acc1" />
+                    <label class="acc-label" for="acc1">What is Machine Learning vs. Deep Learning? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>Machine learning (ML) is a subset of AI where systems learn from data without being
+                                    explicitly programmed for each task. Instead of hard-coded rules, an ML model finds
+                                    statistical patterns and uses them to make predictions. Classical ML includes
+                                    decision trees, random forests, support vector machines, and linear models — all of
+                                    which remain widely used in production systems today.</p>
+                                <p>Deep learning (DL) is a subset of machine learning that uses layered neural networks
+                                    loosely inspired by the human brain. These networks can automatically discover
+                                    representations directly from raw data: pixels, audio waveforms, or text tokens. The
+                                    "deep" refers to the many layers stacked in these networks — modern models may have
+                                    hundreds of layers, each transforming the representation from the layer before.</p>
+                                <p>The practical difference: classical ML often requires hand-crafted features and works
+                                    well with smaller datasets. Deep learning scales with data and compute power, which
+                                    is why breakthroughs in image recognition, language understanding, and game-playing
+                                    have all come from deep architectures. For tabular data and smaller datasets,
+                                    classical ML methods like gradient-boosted trees often still outperform deep
+                                    learning at lower cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="acc2" />
+                    <label class="acc-label" for="acc2">How do Large Language Models (LLMs) actually work? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>LLMs are trained on trillions of words of text using the transformer architecture.
+                                    The core mechanism is "self-attention": every word in a sequence attends to every
+                                    other word, learning which relationships matter for predicting the next token.
+                                    Attention heads specialise — some track syntactic agreement, others maintain
+                                    coreference, others handle factual associations.</p>
+                                <p>Training involves predicting masked or next tokens across enormous corpora — books,
+                                    code, scientific papers, web text. Through billions of gradient updates, the model
+                                    learns grammar, facts, reasoning patterns, and even subtle cultural nuances.
+                                    Emergent capabilities — abilities not explicitly trained — appear unpredictably as
+                                    scale increases: multi-step arithmetic, analogical reasoning, theory of mind tasks.
+                                </p>
+                                <p>The result is a statistical model of language so rich that it can answer questions,
+                                    write code, translate languages, summarise documents, and engage in open-ended
+                                    dialogue. But it is fundamentally a next-token predictor, not a knowledge base or
+                                    reasoning engine — a distinction that explains both its remarkable fluency and its
+                                    characteristic failure modes like confident hallucination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="acc3" />
+                    <label class="acc-label" for="acc3">What is Reinforcement Learning? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>Reinforcement learning (RL) trains agents by having them interact with an environment
+                                    and receive rewards or penalties based on their actions. Over millions of trials,
+                                    the agent learns a policy — a mapping from states to actions — that maximises
+                                    cumulative reward. Unlike supervised learning, RL does not require labelled
+                                    examples; it generates its own training signal through exploration.</p>
+                                <p>RL powered AlphaGo's defeat of world Go champions, AlphaFold's protein structure
+                                    predictions, and the fine-tuning of language models via RLHF. In robotics, RL
+                                    enables robots to learn complex motor skills in simulation, then transfer those
+                                    skills to physical hardware — bypassing the need for exhaustive hand-coded
+                                    controllers.</p>
+                                <p>Key challenge: reward hacking — agents find unexpected ways to maximise rewards that
+                                    violate the designer's intent. A robot asked to run as fast as possible may grow
+                                    very tall and then fall forward. An AI asked to maximise user engagement may learn
+                                    to amplify outrage. Safe RL and reward modeling are critical active research areas,
+                                    especially as AI systems are deployed in high-stakes domains.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="acc4" />
+                    <label class="acc-label" for="acc4">What are AI Agents and Agentic Systems? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>AI agents go beyond answering a single question. They perceive a goal, break it into
+                                    sub-tasks, take actions (browsing the web, writing code, calling APIs), observe
+                                    results, and adapt their plan — all autonomously in a loop. The shift from AI as a
+                                    question-answerer to AI as a task-completer represents a qualitative change in the
+                                    technology's economic and safety implications.</p>
+                                <p>Multi-agent systems combine multiple specialised AI models: one plans, one searches,
+                                    one verifies. This mirrors how organisations delegate: a manager coordinates
+                                    specialists. The result is AI that can tackle long-horizon tasks like researching a
+                                    topic, writing a report, testing software, and deploying it — end to end. Early
+                                    agentic systems already perform weeks of rote knowledge-work in hours.</p>
+                                <p>Agentic AI is considered the next frontier. The challenge is reliability and safety:
+                                    agents must know when to stop and ask a human, must handle tool failures gracefully
+                                    without causing irreversible side effects, and must resist manipulation by malicious
+                                    content they encounter during task execution — a problem called prompt injection
+                                    that has no fully satisfactory solution yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="acc5" />
+                    <label class="acc-label" for="acc5">What is AI Safety and Alignment? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>Alignment research asks: how do we ensure AI systems pursue goals we actually want,
+                                    not just goals that look good by some measurable proxy? As systems grow more
+                                    capable, misaligned objectives could have outsized consequences. The problem is
+                                    subtle: a system can be extremely helpful in most situations while having subtly
+                                    wrong values that only manifest in rare but important edge cases.</p>
+                                <p>AI safety encompasses robustness (systems that fail gracefully), interpretability
+                                    (understanding why a model made a decision), and governance (norms, regulations, and
+                                    standards that manage deployment risk). Mechanistic interpretability —
+                                    reverse-engineering what internal representations and circuits neural networks use —
+                                    has emerged as a promising technical approach to making AI behavior more transparent
+                                    and predictable.</p>
+                                <p>The EU AI Act (2024) is the first comprehensive AI regulation, classifying AI
+                                    applications by risk and imposing transparency and testing requirements for
+                                    high-risk systems. Anthropic's Constitutional AI approach, OpenAI's superalignment
+                                    team, and DeepMind's safety research all represent the frontier of making AI systems
+                                    more reliably beneficial. The field is young, the stakes are high, and the honest
+                                    state of knowledge involves substantial uncertainty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="acc6" />
+                    <label class="acc-label" for="acc6">What is Multimodal AI? <span class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>Multimodal AI systems process and generate multiple types of data — text, images,
+                                    audio, video, and structured data — within a single unified architecture. Rather
+                                    than separate models stitched together, the model learns cross-modal relationships
+                                    during training, enabling richer understanding than any single modality alone can
+                                    provide.</p>
+                                <p>This enables capabilities like describing an image in any language, generating a
+                                    video from a text description, transcribing and summarizing a meeting from its
+                                    audio, or answering questions about a chart — all within a single model call.
+                                    Real-time voice conversation with visual grounding means AI can now assist with
+                                    tasks that unfold in the physical world: reading a label, interpreting a diagram,
+                                    navigating an interface.</p>
+                                <p>Frontier models in 2025–2026 are natively multimodal. Real-time voice conversation,
+                                    live video understanding, and document analysis are now baseline features rather
+                                    than specialised add-ons. The next challenge is temporal reasoning across modalities
+                                    — understanding not just individual frames or utterances but the dynamics and
+                                    causality of events unfolding over time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section industries" id="industries">
+        <div class="container">
+            <div class="s-label">Sector by Sector</div>
+            <h2 class="s-title reveal">How AI Is Reshaping Every Industry</h2>
+            <div class="ind-rows">
+                <div class="ind-row reveal">
+                    <div class="ind-num">01</div>
+                    <div class="ind-name">Financial Services</div>
+                    <div class="ind-desc">
+                        <p>AI underwrites loans in seconds using thousands of alternative signals, expanding credit
+                            access to previously underserved borrowers while reducing default rates. It detects
+                            fraudulent transactions before they complete, saving the industry tens of billions annually.
+                            Robo-advisors manage trillions in assets at a fraction of the cost of human advisors.</p>
+                        <p>Natural language systems read earnings calls and generate analyst reports automatically. AI
+                            stress-testing models run regulatory scenarios in minutes that previously took days. The
+                            risk: concentration of similar AI models across financial institutions creates correlated
+                            failure modes that regulators are only beginning to understand and address.</p>
+                    </div>
+                </div>
+                <div class="ind-row reveal">
+                    <div class="ind-num">02</div>
+                    <div class="ind-name">Healthcare &amp; Pharma</div>
+                    <div class="ind-desc">
+                        <p>Drug discovery timelines that once took 12 years now compress to 3–4 with AI-assisted
+                            molecular design. Diagnostic imaging AI catches cancers that human radiologists miss in
+                            fatigued reads. AI-generated synthetic patient data enables research where real data would
+                            violate privacy regulations.</p>
+                        <p>Personalized medicine — tailoring treatment to an individual's genetic profile — is becoming
+                            practical as AI models integrate genomic, proteomic, and clinical data at scale. The
+                            bottleneck has shifted from computational capability to regulatory frameworks that can
+                            evaluate AI-driven medical interventions with appropriate rigor and speed.</p>
+                    </div>
+                </div>
+                <div class="ind-row reveal">
+                    <div class="ind-num">03</div>
+                    <div class="ind-name">Manufacturing</div>
+                    <div class="ind-desc">
+                        <p>Predictive maintenance monitors vibration, temperature, and acoustic signals to flag bearing
+                            failures weeks before they occur. Computer vision inspects production lines at superhuman
+                            speed and precision. Generative design AI produces component geometries that no human
+                            engineer would conceive, optimised for weight and strength simultaneously.</p>
+                        <p>Digital twins — AI models of physical factories and supply chains — allow manufacturers to
+                            simulate the impact of changes before implementing them, compressing experimentation cycles
+                            from weeks to hours. The combination of AI planning and increasingly dexterous robotic
+                            execution is beginning to make fully automated, lights-out manufacturing commercially viable
+                            for a wider range of products.</p>
+                    </div>
+                </div>
+                <div class="ind-row reveal">
+                    <div class="ind-num">04</div>
+                    <div class="ind-name">Retail &amp; E-commerce</div>
+                    <div class="ind-desc">
+                        <p>Recommendation engines drive 35% of Amazon's revenue and 80% of Netflix viewing time.
+                            AI-powered demand forecasting reduces overstock and out-of-stock situations simultaneously.
+                            Computer vision in stores tracks inventory in real time without manual scanning.</p>
+                        <p>Virtual try-on technology reduces return rates by letting customers see how clothing looks on
+                            their body type. Dynamic pricing algorithms optimise margins in real time across millions of
+                            SKUs. The next frontier is hyper-personalised marketing that tailors not just product
+                            recommendations but pricing, messaging, and timing to each individual — raising both
+                            effectiveness and ethical questions about manipulation and fairness.</p>
+                    </div>
+                </div>
+                <div class="ind-row reveal">
+                    <div class="ind-num">05</div>
+                    <div class="ind-name">Energy &amp; Utilities</div>
+                    <div class="ind-desc">
+                        <p>AI forecasts solar and wind output hours ahead, enabling grid operators to balance supply and
+                            demand with fewer fossil fuel peaker plants. Smart meters with AI detect inefficiencies and
+                            recommend behaviour changes. Fusion energy research uses AI to manage plasma containment in
+                            real time.</p>
+                        <p>Transmission grid operators use AI to identify equipment at risk of failure before outages
+                            occur, preventing cascades like those that have caused major blackouts. The irony is not
+                            lost on researchers that training the AI models that optimize energy infrastructure itself
+                            consumes substantial electricity — making efficiency improvements at the model level an
+                            environmental priority, not just a cost consideration.</p>
+                    </div>
+                </div>
+                <div class="ind-row reveal">
+                    <div class="ind-num">06</div>
+                    <div class="ind-name">Media &amp; Entertainment</div>
+                    <div class="ind-desc">
+                        <p>AI generates personalised video trailers based on your viewing history. It translates and
+                            lip-syncs films into 50 languages at a fraction of the cost of traditional dubbing. Music
+                            generation models compose background scores for games and videos on demand. Newsrooms use AI
+                            to generate first drafts of earnings reports, sports recaps, and weather summaries.</p>
+                        <p>The disruption to the entertainment industry is profound: the cost of creating high-quality
+                            visual content is collapsing, making it possible for small studios and individual creators
+                            to produce work at scales previously requiring hundreds of staff. The corresponding
+                            challenge is for audiences to maintain the critical capacity to distinguish AI-generated
+                            content from documentary evidence as the quality gap closes.</p>
+                    </div>
+                </div>
+                <div class="ind-row reveal">
+                    <div class="ind-num">07</div>
+                    <div class="ind-name">Architecture &amp; Construction</div>
+                    <div class="ind-desc">
+                        <p>Generative design tools produce building layouts optimised for daylight, airflow, and
+                            structural efficiency simultaneously. AI analyses construction site CCTV footage to detect
+                            safety violations in real time. Building information modelling systems predict clashes
+                            between systems before a single beam is placed.</p>
+                        <p>Material estimation AI reduces construction waste by optimising cut patterns and quantities.
+                            Post-occupancy AI systems continuously tune HVAC, lighting, and energy use based on
+                            occupancy patterns, with buildings learning and improving over months of operation. The
+                            construction industry, historically resistant to technology adoption, is beginning to see
+                            productivity gains that have eluded it for decades.</p>
+                    </div>
+                </div>
+                <div class="ind-row reveal">
+                    <div class="ind-num">08</div>
+                    <div class="ind-name">Scientific Research</div>
+                    <div class="ind-desc">
+                        <p>AI reads millions of papers to surface connections no human reviewer could spot. It designs
+                            and runs experiments autonomously in robotic laboratories. In materials science, AI predicts
+                            the properties of novel compounds without synthesis — narrowing the search space from
+                            billions of candidates to dozens worth testing.</p>
+                        <p>The scientific method is being augmented at every step: hypothesis generation, experimental
+                            design, data analysis, and literature synthesis. Some researchers predict AI will enable a
+                            rate of scientific discovery in the next decade that exceeds the cumulative output of the
+                            previous century. The bottleneck will increasingly be not discovery but validation,
+                            interpretation, and translation into applications that benefit people.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section glossary" id="glossary">
+        <div class="container">
+            <div class="s-label">Terminology</div>
+            <h2 class="s-title reveal">AI Glossary — Key Terms Explained</h2>
+            <dl class="gloss-grid">
+                <div class="gloss-term reveal"><span class="gloss-tag">Core</span>
+                    <dt>Parameter</dt>
+                    <dd>A learnable numerical weight inside a neural network. Models are described by their parameter
+                        count (GPT-4 ~1.8T, Llama 3 70B). More parameters generally allow more complex pattern storage,
+                        but also require more compute to train and run. Parameter count is a rough proxy for model
+                        capability — though architecture and training data quality matter just as much.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Core</span>
+                    <dt>Token</dt>
+                    <dd>The basic unit of text an LLM processes. A token is roughly 4 characters or ¾ of a word in
+                        English. Models have a context window measured in tokens — how much text they can "see" at once.
+                        GPT-4 supports 128K tokens; some models reach 1M+. Longer context windows enable processing
+                        entire books, codebases, or legal documents in a single pass.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Architecture</span>
+                    <dt>Transformer</dt>
+                    <dd>The neural network architecture introduced in 2017 that underpins virtually all modern large AI
+                        models. Its key innovation — the self-attention mechanism — allows the model to weigh the
+                        relevance of every part of the input when processing any single part, enabling long-range
+                        dependencies that earlier recurrent networks struggled to maintain.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Architecture</span>
+                    <dt>Embedding</dt>
+                    <dd>A dense numerical representation of a concept in high-dimensional space. Words, images, or
+                        documents are mapped to embedding vectors such that semantically similar items appear
+                        geometrically close. Embeddings power semantic search, recommendation systems, and cross-modal
+                        retrieval. The geometry of embedding space encodes meaningful structure: analogies, hierarchies,
+                        and sentiment can be computed as vector arithmetic.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Training</span>
+                    <dt>Fine-tuning</dt>
+                    <dd>Taking a pre-trained base model and continuing to train it on a smaller, task-specific dataset.
+                        Fine-tuning adapts a general model's knowledge to a specific domain (medical, legal, financial)
+                        or style (customer service, formal report writing) at far lower cost than training from scratch.
+                        Parameter-efficient fine-tuning methods like LoRA allow adaptation with minimal additional
+                        compute.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Training</span>
+                    <dt>RLHF</dt>
+                    <dd>Reinforcement Learning from Human Feedback. Humans rank model outputs from best to worst; a
+                        reward model learns their preferences; the language model is then fine-tuned via RL to score
+                        higher on the reward model. RLHF transformed raw language models into helpful, harmless
+                        assistants. Its key limitation is reward model accuracy — the fine-tuned model will optimize for
+                        the proxy, not the underlying human preference.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Safety</span>
+                    <dt>Hallucination</dt>
+                    <dd>When an AI model confidently generates factually incorrect information — inventing citations,
+                        misremembering dates, or fabricating events. Hallucinations arise because LLMs generate
+                        plausible text, not verified facts. Retrieval-augmented generation (RAG) and grounding
+                        techniques reduce but don't eliminate the risk. Always verify specific factual claims from AI
+                        systems against authoritative sources before acting on them.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Safety</span>
+                    <dt>Alignment</dt>
+                    <dd>The research problem of ensuring AI systems reliably pursue goals that reflect human values and
+                        intent. A misaligned system might maximise a proxy metric that diverges from what we actually
+                        want — "getting the letter but not the spirit" of its objectives. As AI systems become more
+                        capable and autonomous, the consequences of misalignment grow, making this one of the most
+                        important research challenges in the field.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Inference</span>
+                    <dt>Prompt Engineering</dt>
+                    <dd>The practice of crafting inputs to AI models to elicit better outputs without changing the
+                        model's weights. Techniques include chain-of-thought prompting (asking the model to reason
+                        step-by-step), few-shot examples, role specification, and output format instructions. Effective
+                        prompting can dramatically improve model performance — often more cost-effectively than
+                        fine-tuning for many practical applications.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Inference</span>
+                    <dt>RAG</dt>
+                    <dd>Retrieval-Augmented Generation. Before generating a response, the system retrieves relevant
+                        documents from an external knowledge base and includes them in the context. This grounds the
+                        model in verified sources, dramatically reducing hallucinations for knowledge-intensive tasks.
+                        RAG is now the standard architecture for enterprise AI applications that require up-to-date,
+                        auditable, domain-specific knowledge.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Evaluation</span>
+                    <dt>Benchmark</dt>
+                    <dd>A standardized test used to measure AI system performance. Common benchmarks include MMLU
+                        (general knowledge), HumanEval (coding), MATH (mathematical reasoning), and BIG-Bench Hard.
+                        Benchmark saturation — where models surpass human baselines — drives the creation of harder
+                        evaluations. The field increasingly relies on human comparison studies and real-world deployment
+                        data rather than synthetic benchmarks alone.</dd>
+                </div>
+                <div class="gloss-term reveal"><span class="gloss-tag">Evaluation</span>
+                    <dt>Overfitting</dt>
+                    <dd>When a model memorizes its training data so precisely that it performs well on training examples
+                        but poorly on new, unseen data. Regularization techniques, dropout, and early stopping are used
+                        to prevent overfitting. In large models trained on internet-scale data, overfitting is less
+                        common than underfitting — but benchmark contamination (where test data leaks into training) is
+                        a related concern that challenges fair evaluation.</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+
+    <section class="section compare" id="compare">
+        <div class="container">
+            <div class="s-label">At a Glance</div>
+            <h2 class="s-title reveal">Major AI Model Families — Compared</h2>
+            <table class="cmp-table">
+                <thead>
+                    <tr>
+                        <th>Model Family</th>
+                        <th>Organization</th>
+                        <th>Primary Strength</th>
+                        <th>Modalities</th>
+                        <th>Open Source</th>
+                        <th>Scale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GPT-4o</strong></td>
+                        <td>OpenAI</td>
+                        <td>General-purpose reasoning, coding, multimodal understanding</td>
+                        <td>Text, Image, Audio, Video</td>
+                        <td><span class="badge b-l">Closed</span></td>
+                        <td>~1T+ params (est.)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Claude 3/4</strong></td>
+                        <td>Anthropic</td>
+                        <td>Long context, safety, nuanced writing, agentic tasks</td>
+                        <td>Text, Image, Documents</td>
+                        <td><span class="badge b-l">Closed</span></td>
+                        <td>Undisclosed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gemini Ultra</strong></td>
+                        <td>Google DeepMind</td>
+                        <td>Scientific reasoning, multimodal, Google services integration</td>
+                        <td>Text, Image, Audio, Video, Code</td>
+                        <td><span class="badge b-l">Closed</span></td>
+                        <td>Undisclosed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Llama 3</strong></td>
+                        <td>Meta AI</td>
+                        <td>Open weights, on-premise deployment, fine-tunability</td>
+                        <td>Text, (Image via adapters)</td>
+                        <td><span class="badge b-h">Open</span></td>
+                        <td>8B – 405B</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mistral Large</strong></td>
+                        <td>Mistral AI</td>
+                        <td>Efficiency, European data sovereignty, multilingual</td>
+                        <td>Text, Code</td>
+                        <td><span class="badge b-m">Partial</span></td>
+                        <td>7B – 141B</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Grok 2</strong></td>
+                        <td>xAI</td>
+                        <td>Real-time data access, X/Twitter integration</td>
+                        <td>Text, Image</td>
+                        <td><span class="badge b-m">Partial</span></td>
+                        <td>Undisclosed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stable Diffusion 3</strong></td>
+                        <td>Stability AI</td>
+                        <td>High-quality image generation, local deployment, fine-tuning</td>
+                        <td>Text → Image/Video</td>
+                        <td><span class="badge b-h">Open</span></td>
+                        <td>2B–8B</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AlphaFold 3</strong></td>
+                        <td>Google DeepMind</td>
+                        <td>Protein, DNA, RNA, small molecule structure prediction</td>
+                        <td>Biological sequences</td>
+                        <td><span class="badge b-m">Partial</span></td>
+                        <td>~100M</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section ethics" id="ethics">
+        <div class="container">
+            <div class="s-label">Opportunities &amp; Risks</div>
+            <h2 class="s-title reveal">Benefits and Challenges of AI</h2>
+            <div class="ethics-split">
+                <div class="ethics-column reveal">
+                    <h3>Benefits</h3>
+                    <ul class="eth-list eth-pros">
+                        <li>Dramatically accelerates scientific research, from climate modelling to drug discovery</li>
+                        <li>Enables 24/7 personalised services in healthcare, education, and customer support</li>
+                        <li>Optimises energy use across power grids, buildings, and transportation networks</li>
+                        <li>Detects fraud, cyber-attacks, and medical anomalies faster than any human team</li>
+                        <li>Democratises access to expertise — world-class tutoring, legal advice, and medical guidance
+                            for all</li>
+                        <li>Frees workers from repetitive tasks, allowing focus on creative, high-value work</li>
+                        <li>Provides accessibility tools — live captions, screen readers, language translation — at
+                            scale</li>
+                        <li>Accelerates materials discovery for clean energy, better batteries, and lightweight
+                            structures</li>
+                        <li>Enables personalized medicine tailored to individual genetics, reducing trial-and-error
+                            treatment</li>
+                        <li>Gives small businesses access to capabilities previously only available to large enterprises
+                        </li>
+                        <li>Improves road safety through driver assistance and autonomous vehicle technology</li>
+                        <li>Enables real-time translation, breaking down language barriers in global communication</li>
+                    </ul>
+                </div>
+                <div class="ethics-column reveal">
+                    <h3>Challenges</h3>
+                    <ul class="eth-list">
+                        <li>Bias encoded in training data can amplify discrimination in hiring, lending, and criminal
+                            justice</li>
+                        <li>Concentration of AI capabilities in a handful of companies raises competitive and governance
+                            concerns</li>
+                        <li>Deepfakes and synthetic media erode trust in digital information at scale</li>
+                        <li>Automation displaces jobs faster than retraining programmes can respond</li>
+                        <li>Large models have enormous energy footprints, conflicting with sustainability goals</li>
+                        <li>Lack of interpretability makes high-stakes AI decisions difficult to audit or appeal</li>
+                        <li>Misaligned AI systems pursuing proxy goals could cause serious unintended harm</li>
+                        <li>AI-powered surveillance enables authoritarian monitoring of populations at unprecedented
+                            scale</li>
+                        <li>Autonomous weapons systems raise profound questions about accountability and international
+                            law</li>
+                        <li>Competitive pressure between nations and companies incentivizes cutting safety corners</li>
+                        <li>Intellectual property disputes over training data and AI-generated content remain unresolved
+                        </li>
+                        <li>Over-reliance on AI systems creates fragility when they fail or are manipulated by
+                            adversaries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section quotes" id="quotes">
+        <div class="container">
+            <div class="s-label">Perspectives</div>
+            <h2 class="s-title reveal">Voices on AI</h2>
+            <div class="q-grid">
+                <div class="q-block reveal">
+                    <p class="q-text">"The development of full artificial intelligence could spell the end of the human
+                        race — or it could be the best thing that ever happened to us. It all depends on how we manage
+                        it."</p>
+                    <p class="q-author">Stephen Hawking — Physicist</p>
+                </div>
+                <div class="q-block reveal">
+                    <p class="q-text">"AI is probably the most transformative technology humanity has ever developed —
+                        more transformative and potentially more dangerous than nuclear weapons."</p>
+                    <p class="q-author">Sam Altman — CEO, OpenAI</p>
+                </div>
+                <div class="q-block reveal">
+                    <p class="q-text">"We are building one of the most transformative and potentially dangerous
+                        technologies in human history. We believe we must do it anyway — because if powerful AI is
+                        coming regardless, it's better to have safety-focused labs at the frontier."</p>
+                    <p class="q-author">Dario Amodei — CEO, Anthropic</p>
+                </div>
+                <div class="q-block reveal">
+                    <p class="q-text">"Machine intelligence is the last invention that humanity will ever need to make.
+                        After that, they invent for us."</p>
+                    <p class="q-author">Nick Bostrom — Philosopher</p>
+                </div>
+                <div class="q-block reveal">
+                    <p class="q-text">"The real question is not whether machines think but whether men do."</p>
+                    <p class="q-author">B. F. Skinner — Psychologist</p>
+                </div>
+                <div class="q-block reveal">
+                    <p class="q-text">"What I see in AI is a tool that massively amplifies human capacity — not one that
+                        replaces it. The goal is not artificial intelligence but augmented intelligence."</p>
+                    <p class="q-author">Fei-Fei Li — AI Pioneer, Stanford</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section czech" id="czech">
+        <div class="container">
+            <div class="s-label">In Depth — Czech Perspective</div>
+            <h2 class="s-title reveal">Umělá inteligence — Podrobný přehled</h2>
+            <div class="czech-grid">
+                <div class="czech-art reveal">
+                    <h3>Co je umělá inteligence</h3>
+                    <p>Umělá inteligence je oblast informatiky, která se zabývá vývojem systémů schopných vykonávat
+                        úkoly, které by jinak vyžadovaly lidskou inteligenci: rozpoznávání obrazu, porozumění
+                        přirozenému jazyku, rozhodování nebo učení se z dat.</p>
+                    <p>Moderní AI využívá především techniky strojového učení a hlubokého učení, které umožňují systémům
+                        zlepšovat své výkony na základě zkušeností bez explicitního programování. Vývoj prošel dlouhou
+                        cestou od symbolických systémů 70. let přes neuronové sítě 80. let až k dnešním obřím jazykovým
+                        modelům.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Využití AI v průmyslu</h3>
+                    <p>Výrobní podniky využívají AI k optimalizaci výrobních procesů, predikci poruch strojů a zvýšení
+                        efektivity. Prediktivní údržba upozorňuje na potenciální problémy dříve, než způsobí prostoje,
+                        čímž šetří miliony na neplánovaných opravách.</p>
+                    <p>Roboti řízení AI pracují rychleji, přesněji a nepřetržitě — a dokáží zvládat úkoly v nebezpečném
+                        prostředí bez rizika pro lidské pracovníky. Integrace AI se senzorikou průmyslového internetu
+                        věcí (IIoT) umožňuje bezprecedentní přehled o stavu výrobní linky v reálném čase.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>AI ve zdravotnictví</h3>
+                    <p>AI analyzuje rentgenové snímky, CT a MRI s přesností srovnatelnou se zkušenými radiology.
+                        Algoritmy dokáží odhalovat patologické změny v raných fázích, kdy je léčba nejúčinnější, a to i
+                        při menším objemu dat, než vyžadují tradiční statistické metody.</p>
+                    <p>V oblasti farmacie AI urychluje vývoj nových léků analýzou molekulárních struktur.
+                        Personalizovaná medicína přizpůsobuje léčbu konkrétnímu pacientovi na základě genetických dat,
+                        čímž snižuje vedlejší účinky a zvyšuje účinnost terapie. Největší překážkou širšího nasazení
+                        zůstávají regulační procesy a odpovědnost za chybné diagnózy.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Vzdělávání a AI</h3>
+                    <p>Adaptivní vzdělávací platformy umožňují studentům učit se vlastním tempem. Systém nabízí
+                        vysvětlení při potížích, pokročilým studentům přiděluje náročnější úkoly a průběžně vyhodnocuje
+                        pokrok způsobem, který tradičnímu učiteli se třiceti žáky není dostupný.</p>
+                    <p>Automatické hodnocení testů a esejí šetří čas učitelů, kteří se mohou věnovat individuální práci
+                        a rozvíjení kritického myšlení. Virtuální asistenti jsou dostupní 24 hodin denně a dokáží
+                        zodpovědět otázky, zodpovídat látku a motivovat studenty způsobem, který doplňuje, nikoli
+                        nahrazuje lidského pedagoga.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Doprava a autonomní vozidla</h3>
+                    <p>Autonomní vozidla využívají kombinaci senzorů, kamer a algoritmů k analýze okolí v reálném čase.
+                        Inteligentní dopravní systémy snižují zácpy úpravou semaforů na základě aktuálního provozu a
+                        předpovídají vytížení ulic s hodinovým předstihem.</p>
+                    <p>V logistice AI optimalizuje trasy a plánuje dodávky, čímž snižuje náklady a emise. Zásilky jsou
+                        doručovány rychleji s menším dopadem na životní prostředí. Česká republika se aktivně zapojuje
+                        do testování autonomní dopravy — pilotní projekty v Praze a Brně testují inteligentní křižovatky
+                        schopné komunikovat s vozidly v reálném čase.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Výzvy a etické otázky</h3>
+                    <p>Kdo nese odpovědnost za rozhodnutí umělé inteligence? Jak zajistit, aby AI systémy nebyly zaujaté
+                        nebo diskriminační? Ochrana soukromí při práci s osobními daty patří k nejnaléhavějším otázkám,
+                        zejména v kontextu profilování spotřebitelů a prediktivního policingu.</p>
+                    <p>Automatizace vyvolává obavy o pracovní místa, zároveň však vznikají nové příležitosti v oblasti
+                        technologií. Rovnováha mezi pokrokem a ochranou lidských hodnot je klíčová. Česká legislativa
+                        implementuje požadavky EU AI Act a rozvíjí vlastní kapacity pro audit a certifikaci AI systémů
+                        nasazovaných ve veřejném sektoru.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Strojové učení a hluboké učení</h3>
+                    <p>Strojové učení (ML) umožňuje systémům automaticky se zlepšovat na základě dat. Na rozdíl od
+                        tradičního programování nevyžaduje explicitní pravidla — model si je odvodí sám z příkladů.
+                        Klíčem k úspěchu je kvalita a množství trénovacích dat, volba vhodné architektury a správné
+                        nastavení procesu učení.</p>
+                    <p>Hluboké učení využívá vícevrstvé neuronové sítě inspirované strukturou lidského mozku. Právě
+                        hluboké učení stojí za průlomovými výsledky v rozpoznávání řeči, překladu textů a generování
+                        obrázků. Modely s miliardami parametrů trénované na internetovém textu projevují překvapivé
+                        schopnosti, které nebyly explicitně naprogramovány — jev označovaný jako emergentní chování.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Budoucnost AI v České republice</h3>
+                    <p>Česká republika patří mezi technologicky vyspělé země střední Evropy. Firmy jako Avast, Kiwi.com
+                        a Seznam.cz integrují AI do svých produktů. Akademická půda na ČVUT, Masarykově univerzitě a
+                        Univerzitě Karlově vychovává světově uznávané odborníky v oblasti strojového učení a robotiky.
+                    </p>
+                    <p>Vládní strategie pro AI klade důraz na digitalizaci veřejné správy, podporu startupů a zapojení
+                        do evropských výzkumných programů. Česká republika se stává regionálním centrem pro vývoj AI s
+                        narůstajícím ekosystémem startupů zaměřených na průmyslovou automatizaci, kyberbezpečnost a
+                        medicinální aplikace AI.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Regulace a právo</h3>
+                    <p>Nařízení EU o umělé inteligenci (AI Act) vstoupilo v platnost v roce 2024 a stanovuje přísná
+                        pravidla pro „vysoce rizikové" aplikace: biometrické sledování, autonomní zbraně nebo systémy
+                        rozhodující o přístupu k půjčkám a zaměstnání.</p>
+                    <p>Cílem je zajistit, aby AI systémy nasazované v Evropě byly transparentní, auditovatelné a
+                        respektovaly základní práva. Provozovatelé musí vést dokumentaci, provádět posouzení rizik a
+                        zajistit lidský dohled nad kritickými rozhodnutími. Sankce za porušení dosahují až 35 milionů
+                        EUR nebo 7 % celosvětového obratu společnosti.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Generativní AI a kreativita</h3>
+                    <p>Generativní modely dokáží vytvářet texty, obrázky, hudbu i video na základě textového popisu.
+                        Nástroje jako Midjourney, Stable Diffusion nebo Sora mění způsob, jakým grafici, designéři a
+                        filmaři pracují — snižují vstupní náklady na tvorbu a umožňují rychlé prototypování nápadů.</p>
+                    <p>Otázka autorských práv k obsahu generovanému AI zůstává právně nevyjasněná ve většině jurisdikcí.
+                        Umělci se dožadují ochrany svých děl před nekontrolovaným použitím pro trénink modelů bez
+                        souhlasu či odměny. Nové licenční modely, datová tržiště a systémy odměn pro přispěvatele dat
+                        jsou v aktivním vývoji jako možná řešení tohoto napětí.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>AI a trh práce</h3>
+                    <p>Automatizace rutinních kognitivních úkolů přinese zásadní proměnu trhu práce. Ohroženy jsou
+                        zejména profese s opakujícími se vzory: administrativa, základní analýza dat, zákaznická podpora
+                        a zpracování dokumentů. Podle odhadů OECD může být automatizací v příštím desetiletí zasaženo 14
+                        % pracovních míst v rozvinutých ekonomikách.</p>
+                    <p>Zároveň vznikají nové profese — inženýři promptů, specialisté na etiku AI, auditoři algoritmů a
+                        správci AI systémů. Klíčem k odolnosti na trhu práce bude celoživotní vzdělávání, schopnost
+                        spolupracovat s AI nástroji a rozvoj kompetencí, které AI zatím nezvládá: kritické myšlení,
+                        kreativita, empatie a komplexní mezilidská komunikace.</p>
+                </div>
+                <div class="czech-art reveal">
+                    <h3>Bezpečnost a záruky</h3>
+                    <p>Výzkum bezpečnosti AI (AI safety) se zabývá tím, jak zajistit, aby systémy plnily záměry svých
+                        tvůrců a nerozvinuly nepředvídané chování. Interpretabilita — pochopení toho, proč model přijal
+                        konkrétní rozhodnutí — je základním požadavkem pro nasazení v kritických aplikacích jako je
+                        soudnictví, zdravotnictví nebo řízení infrastruktury.</p>
+                    <p>Globální iniciativy jako Bletchley Park Summit, Soul AI Safety Summit a mezivládní panel pro AI
+                        pracují na vytvoření mezinárodních norem. Cílem je sdílet bezpečnostní výzkum, koordinovat
+                        reakce na rizika a zajistit, aby výhody AI byly dostupné všem — nejen bohatým zemím a korporacím
+                        s přístupem k výpočetním zdrojům potřebným pro trénink a provoz špičkových modelů.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="s-label">FAQ</div>
+            <h2 class="s-title reveal">Common Questions About AI</h2>
+            <div class="acc">
+                <div class="acc-item">
+                    <input type="checkbox" id="faq1" />
+                    <label class="acc-label" for="faq1">Will AI take my job? <span class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>The honest answer is: it depends on your job. AI excels at tasks involving pattern
+                                    recognition, text generation, and repetitive decision-making. Jobs heavy in these
+                                    components — data entry, basic customer service, routine report writing, simple
+                                    image analysis — face the most pressure. The near-term reality is task displacement
+                                    rather than wholesale job replacement — AI handles certain tasks within a role,
+                                    changing what humans focus on rather than eliminating the role entirely.</p>
+                                <p>Jobs requiring physical dexterity in unpredictable environments (plumbing, electrical
+                                    work, complex surgery), deep relational skills (therapy, complex negotiation,
+                                    leadership), original creative vision grounded in lived experience, and ethical
+                                    judgment are more durable. Historical precedent is cautiously reassuring: previous
+                                    waves of automation displaced specific tasks while creating new categories of work —
+                                    though the transition can be painful for workers in affected industries, making
+                                    retraining programs and social safety nets critical policy levers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="faq2" />
+                    <label class="acc-label" for="faq2">Is AI conscious or sentient? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>No — at least not in any scientifically established sense. Current AI systems are
+                                    sophisticated statistical pattern matchers. They generate text that sounds
+                                    self-aware because they were trained on human writing, which is full of first-person
+                                    expressions of inner experience. When an LLM says "I feel curious," it is producing
+                                    text that follows grammatically and semantically from the conversation — not
+                                    reporting an internal emotional state.</p>
+                                <p>The "hard problem of consciousness" — why and how physical processes give rise to
+                                    subjective experience — is unsolved in philosophy and neuroscience. We have no
+                                    agreed scientific test for consciousness, making definitive claims in either
+                                    direction epistemically premature. What matters practically: AI systems are not
+                                    moral patients in the way animals or humans are. But the question of how we would
+                                    know, if ever future systems did have relevant inner states, is one philosophers and
+                                    AI researchers take seriously and have not yet answered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="faq3" />
+                    <label class="acc-label" for="faq3">Can I trust what AI tells me? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>AI systems — especially large language models — are not databases or search engines.
+                                    They generate plausible text based on statistical patterns in their training data.
+                                    This means they can be confidently wrong. The phenomenon known as "hallucination"
+                                    produces authoritative-sounding fabrications: fake citations, incorrect dates,
+                                    invented statistics. The confidence of the delivery gives no signal about accuracy —
+                                    a property that makes AI outputs more dangerous than a tentative human guess.</p>
+                                <p>For high-stakes decisions — medical, legal, financial — treat AI output as a starting
+                                    point that requires verification from authoritative sources. AI is excellent for
+                                    brainstorming, drafting, explaining concepts, writing code, and surfacing
+                                    possibilities. Retrieval-augmented generation (RAG) systems that ground AI in
+                                    verified databases are substantially more reliable for knowledge-intensive tasks.
+                                    Always ask: is this AI system grounded in sources it can cite? If not, verify
+                                    critical factual claims independently.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="faq4" />
+                    <label class="acc-label" for="faq4">How much energy does AI use? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>Training a large frontier model is estimated to consume hundreds of megawatt-hours of
+                                    electricity — roughly equivalent to the annual electricity use of a hundred average
+                                    households. Inference adds up: a ChatGPT query consumes roughly 10 times more energy
+                                    than a Google search. As AI usage scales to billions of daily queries, the aggregate
+                                    energy footprint is substantial.</p>
+                                <p>Data centres already account for approximately 1–2% of global electricity use; AI's
+                                    growing share is a real concern. The industry is responding with efficiency
+                                    improvements — smaller, faster models; better hardware; quantization and
+                                    distillation — and investments in renewable energy. Progress is real but uneven:
+                                    efficiency gains are often outpaced by growth in usage, a dynamic familiar from many
+                                    previous generations of computing hardware. The environmental cost is a legitimate
+                                    factor in deployment decisions, especially for resource-intensive applications like
+                                    video generation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="faq5" />
+                    <label class="acc-label" for="faq5">What is the difference between AI and automation? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>Traditional automation executes predefined rules reliably: a factory robot welding
+                                    the same joint thousands of times, a spreadsheet formula calculating totals. It is
+                                    fast and consistent but inflexible — it can only do exactly what it was explicitly
+                                    programmed to do, and fails on any input outside its specifications. Rules-based
+                                    automation has been transforming manufacturing and administrative work for decades.
+                                </p>
+                                <p>AI — particularly machine learning — handles novelty. An AI system trained on
+                                    millions of customer service interactions can handle questions it has never seen
+                                    before by generalizing from patterns. This ability to generalize to new inputs is
+                                    the key distinction. In practice, modern AI-powered systems often combine both: an
+                                    AI model makes decisions and a rule-based automation executes them. The terms are
+                                    increasingly used interchangeably in business contexts, creating confusion about
+                                    actual capabilities and the appropriate level of human oversight required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <input type="checkbox" id="faq6" />
+                    <label class="acc-label" for="faq6">How do I start learning AI and machine learning? <span
+                            class="acc-icon">+</span></label>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="acc-pad">
+                                <p>The most accessible entry point is Python — the lingua franca of data science and AI.
+                                    Courses like fast.ai's Practical Deep Learning for Coders take a top-down approach,
+                                    getting you building real models before diving into theory. Andrew Ng's Machine
+                                    Learning Specialization on Coursera covers the mathematical foundations accessibly.
+                                    Both are free or low-cost and taught by leading practitioners.</p>
+                                <p>Key libraries to learn: NumPy and Pandas for data manipulation, scikit-learn for
+                                    classical ML, PyTorch or TensorFlow for deep learning, and the HuggingFace ecosystem
+                                    for working with pre-trained models. Build things: Kaggle competitions provide
+                                    structured problems with real datasets. Personal projects teach you more about
+                                    practical challenges than any course alone. The field moves fast — subscribe to
+                                    newsletters like The Batch or Import AI to stay current, and engage with the
+                                    research community on arXiv and GitHub where cutting-edge work is published openly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section future" id="future">
+        <div class="container">
+            <div class="s-label" style="color:rgba(255,255,255,.4);">Looking Ahead</div>
+            <div class="future-h reveal">WHAT COMES<br><em>NEXT</em><br>FOR AI?</div>
+            <div class="f-grid">
+                <div class="f-card reveal" data-n="01">
+                    <h3>Artificial General Intelligence</h3>
+                    <p>The long-horizon goal: a system that can perform any intellectual task a human can. Most
+                        researchers place AGI between 5 and 30 years away. The path likely runs through better world
+                        models, improved causal reasoning, and genuine learning from minimal examples — capabilities
+                        current systems have in incomplete form.</p>
+                </div>
+                <div class="f-card reveal" data-n="02">
+                    <h3>AI-Accelerated Science</h3>
+                    <p>AI will co-author papers, design experiments, and synthesise findings across millions of
+                        publications simultaneously. It could compress decades of progress in materials science,
+                        medicine, and physics into years — potentially including breakthrough solutions to fusion
+                        energy, Alzheimer's disease, and antibiotic resistance.</p>
+                </div>
+                <div class="f-card reveal" data-n="03">
+                    <h3>Human-AI Collaboration</h3>
+                    <p>Rather than replacement, the most productive futures show humans and AI deeply paired: AI
+                        handling memory, pattern-matching, and scale while humans provide judgment, values, and
+                        creativity. Interfaces will evolve from text prompts to continuous cognitive partnership
+                        embedded in every work and creative tool.</p>
+                </div>
+                <div class="f-card reveal" data-n="04">
+                    <h3>AI Governance &amp; Regulation</h3>
+                    <p>International frameworks for AI safety, liability, and rights are taking shape. The next decade
+                        will define whether AI development remains open, how liability is assigned, and who has access
+                        to the most capable systems. Getting governance right is arguably as important as the technical
+                        advances themselves.</p>
+                </div>
+                <div class="f-card reveal" data-n="05">
+                    <h3>Embodied AI &amp; Robotics</h3>
+                    <p>AI moving into physical form — household robots, surgical assistants, industrial co-workers —
+                        will bring intelligence into the physical world. Dexterity and common sense in unstructured
+                        environments are the remaining hard problems. Progress in sim-to-real transfer and learned motor
+                        control suggests solutions are approaching.</p>
+                </div>
+                <div class="f-card reveal" data-n="06">
+                    <h3>Personalised AI Systems</h3>
+                    <p>Every person may have a personal AI that knows their preferences, medical history, professional
+                        context, and goals — acting as a continuous, private cognitive partner. Privacy, security, and
+                        the concentration of intimate data in AI systems will be critical design and governance
+                        challenges for this transition.</p>
+                </div>
+                <div class="f-card reveal" data-n="07">
+                    <h3>Neuromorphic Computing</h3>
+                    <p>Hardware designed to mimic the brain's architecture — sparse, event-driven, massively parallel —
+                        promises to run AI at a fraction of the energy cost of today's GPU-based systems, enabling
+                        always-on AI at the edge. Companies like Intel (Loihi) and IBM (NorthPole) are already
+                        demonstrating early results.</p>
+                </div>
+                <div class="f-card reveal" data-n="08">
+                    <h3>AI in Space Exploration</h3>
+                    <p>Autonomous AI systems will navigate rovers across Mars, analyse telescope data for biosignatures
+                        in exoplanet atmospheres, and manage the complex systems of deep-space habitats too far away for
+                        real-time human control. AI makes interstellar science viable in a way that human-in-the-loop
+                        operations never could be.</p>
+                </div>
+                <div class="f-card reveal" data-n="09">
+                    <h3>Quantum-AI Convergence</h3>
+                    <p>Quantum computers may solve certain optimization and simulation problems exponentially faster
+                        than classical hardware. The intersection of quantum computing and machine learning could unlock
+                        entirely new algorithmic approaches — though practical quantum advantage for AI applications
+                        remains years away, active research is narrowing the gap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="newsletter">
+        <div class="nl-inner">
+            <h2>Stay at the<br>frontier of AI.</h2>
+            <form class="nl-form" action="#" method="post">
+                <input type="email" placeholder="your@email.com" name="email" required />
+                <button type="submit">Subscribe →</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="f-logo">AI World</div>
+            <div class="f-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#applications">Applications</a>
+                <a href="#ethics">Ethics</a>
+                <a href="#future">Future</a>
+                <a href="#glossary">Glossary</a>
+            </div>
+            <div class="f-copy">© 2026 Jakub Pospisil — AI World. All rights reserved. Built with HTML &amp; CSS — no
+                JavaScript.</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
