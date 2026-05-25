@@ -46,7 +46,7 @@
             color: #00adb5;
         }
 
-        /* HERO */
+  
         .stranka {
             height: 90vh;
             display: flex;
@@ -390,7 +390,7 @@
             font-size: 18px;
         }
 
-        /* WARNING BOX */
+     
         .warn-box {
             background: #fff3e0;
             border: 1px solid #ff9800;
